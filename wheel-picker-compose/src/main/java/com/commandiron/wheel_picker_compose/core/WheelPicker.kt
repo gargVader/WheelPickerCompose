@@ -127,7 +127,7 @@ private fun calculateAnimatedAlpha(
     return if(distanceToIndexSnap in 0..singleViewPortHeight.toInt()) {
         1.2f - (distanceToIndexSnap / singleViewPortHeight)
     } else {
-        0.2f
+        0.17f / (distanceToIndexSnap / singleViewPortHeight)
     }
 }
 
